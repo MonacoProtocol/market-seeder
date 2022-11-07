@@ -4,6 +4,7 @@ import { FormatterOptionsArgs, Row, writeToStream } from "@fast-csv/format";
 
 export const csvHeaders = [
     "marketPk",
+    "eventPk",
     "marketTitle",
     "marketType",
     "outcome",

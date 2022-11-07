@@ -95,11 +95,10 @@ To seed from a CSV file containing markets, mid-points and stakes, first you nee
 ⚠️ Maket outcomes will only be seeded if the `seed` value in the csv reads `TRUE` ⚠️
 
 ```
-marketPk,marketTitle,marketType,outcome,forMidpoint,forStakes,againstMidpoint,againstStakes,seed
-FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,Full Time Result,EventResultFullTime,Benfica,2.08,"500, 250, 125",2.03,"500, 250, 125",TRUE
-FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,Full Time Result,EventResultFullTime,Draw,3.85,"100, 50, 25",3.45,"50, 20, 10",FALSE
-FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,Full Time Result,EventResultFullTime,Juventus,4.5,"50, 50, 50",3.85,"50, 50, 50",FALSE
-
+marketPk,eventPk,marketTitle,marketType,outcome,forMidpoint,forStakes,againstMidpoint,againstStakes,seed
+FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,2WCKyUSKW4o7FNMpvYQ31rDs5rVMJitu3qYqxGuq9onK,Full Time Result,EventResultFullTime,Benfica,2.08,"500, 250, 125",2.03,"500, 250, 125",TRUE
+FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,2WCKyUSKW4o7FNMpvYQ31rDs5rVMJitu3qYqxGuq9onK,Full Time Result,EventResultFullTime,Draw,3.85,"100, 50, 25",3.45,"50, 20, 10",TRUE
+FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,2WCKyUSKW4o7FNMpvYQ31rDs5rVMJitu3qYqxGuq9onK,Full Time Result,EventResultFullTime,Juventus,4.5,"50, 50, 50",3.85,"50, 50, 50",TRUE
 ```
 
 You can then seed the markets and outcomes in the CSV by running:
