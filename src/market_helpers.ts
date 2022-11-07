@@ -45,6 +45,7 @@ export function nPricesFromLadder(midPoint: number, noOfPrices: number, forOutco
 
 type MarketOutcomeMapping = {
     marketPk: PublicKey,
+    eventPk: PublicKey,
     marketTitle: string,
     marketType: string,
     outcome: string
@@ -55,6 +56,8 @@ export async function getOpenMarketsOutcomeMappingByToken(token: PublicKey){
     const marketsResponse = await getMarketAccountsByStatusAndMintAccount(program, MarketStatus.Open, token)
     // There are a lot of open markets so filtering by lock time to reduce the amount returned for now
     const filteredMarkets = marketsResponse.data.markets.filter(market => market.account.marketLockTimestamp.toNumber() > 1666393200)
+    // Group markets by their eventAccount
+    filteredMarkets.sort((a,b) => a.account.eventAccount.toString() > b.account.eventAccount.toString() ? 1: -1)
     const marketOutcomeMap = [] as MarketOutcomeMapping[]
     for (const market of filteredMarkets) {
         log(`Mapping outcomes for market: ${market.publicKey.toString()} ⏱`)
@@ -63,6 +66,7 @@ export async function getOpenMarketsOutcomeMappingByToken(token: PublicKey){
             marketOutcomeMap.push(
                 {
                     marketPk: market.publicKey,
+                    eventPk: market.account.eventAccount,
                     marketTitle: market.account.title,
                     marketType: market.account.marketType,
                     outcome: outcome

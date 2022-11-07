@@ -21,7 +21,7 @@ async function seedFromCsv(csvName: string, forOutcome: boolean){
         const againstStakes = floatListFromString(dataPoint.againstStakes)
         const forMidpoint = parseFloat(dataPoint.forMidpoint)
         const againstMidpoint = parseFloat(dataPoint.againstMidpoint)
-        log(`Market ${dataPoint.marketPk} | Outcome: ${dataPoint.outcome} ℹ️`)
+        log(`Market ${dataPoint.marketPk} | Outcome: ${dataPoint.outcome} | Title: ${dataPoint.marketTitle} ℹ️`)
         if (dataPoint.seed === "TRUE"){
             if (forOutcome){
                 log(`FOR midpoint ${forMidpoint} | Stakes: ${forStakes} ℹ️`)
