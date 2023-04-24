@@ -3,20 +3,20 @@ import * as csv from "fast-csv";
 import { FormatterOptionsArgs, Row, writeToStream } from "@fast-csv/format";
 
 export const csvHeaders = [
-    "marketPk",
-    "eventPk",
-    "marketTitle",
-    "marketType",
-    "outcome",
-    "outcomeIndex",
-    "truePrice",
-    "spread",
-    "steps",
-    "toReturn",
-    "toLose",
-    "depthPercentages",
-    "seed"
-]
+  "marketPk",
+  "eventPk",
+  "marketTitle",
+  "marketType",
+  "outcome",
+  "outcomeIndex",
+  "truePrice",
+  "spread",
+  "steps",
+  "toReturn",
+  "toLose",
+  "depthPercentages",
+  "seed"
+];
 
 type CsvFileOpts = {
   path: string;
