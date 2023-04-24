@@ -1,0 +1,115 @@
+marketPk,eventPk,marketTitle,marketType,outcome,outcomeIndex,truePrice,spread,steps,toReturn,toLose,depthPercentages,seed
+BV6FLHp254RSaQvLtrjhQa51Btn3GpQUT9iRu1S714CX,28JcGnQr9T4PZhduwR3L45Cyp5mBtjV7ShN87BxRN2Bx,Full Time Result,EventResultFullTime,Torino,0,2,2,2,100,100,"100,75,50",TRUE
+BV6FLHp254RSaQvLtrjhQa51Btn3GpQUT9iRu1S714CX,28JcGnQr9T4PZhduwR3L45Cyp5mBtjV7ShN87BxRN2Bx,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+BV6FLHp254RSaQvLtrjhQa51Btn3GpQUT9iRu1S714CX,28JcGnQr9T4PZhduwR3L45Cyp5mBtjV7ShN87BxRN2Bx,Full Time Result,EventResultFullTime,Atalanta,2,2,2,2,100,100,"100,75,50",FALSE
+ABtq8rQNNRoXyqaNQUVNaubcR5PyFjucogZfvzUcGzbZ,35DX3LrSQ2i6FVenhEErqbWd6sTwp9hFmAve7A5uJDrn,Winner,EventResultWinner,Minnesota Timberwolves,0,2,2,2,100,100,"100,75,50",FALSE
+ABtq8rQNNRoXyqaNQUVNaubcR5PyFjucogZfvzUcGzbZ,35DX3LrSQ2i6FVenhEErqbWd6sTwp9hFmAve7A5uJDrn,Winner,EventResultWinner,Denver Nuggets,1,2,2,2,100,100,"100,75,50",FALSE
+7Dz2i5X6yj3khkxSbhPdT6gH92nc3KHPrzYSSQuZQpAN,4EAdRH9k1Pddg4K3b6K2gsi5yBmqZ7uVvKarYhgkubtf,Full Time Result,EventResultFullTime,Fiorentina,0,2,2,2,100,100,"100,75,50",FALSE
+7Dz2i5X6yj3khkxSbhPdT6gH92nc3KHPrzYSSQuZQpAN,4EAdRH9k1Pddg4K3b6K2gsi5yBmqZ7uVvKarYhgkubtf,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+7Dz2i5X6yj3khkxSbhPdT6gH92nc3KHPrzYSSQuZQpAN,4EAdRH9k1Pddg4K3b6K2gsi5yBmqZ7uVvKarYhgkubtf,Full Time Result,EventResultFullTime,Sampdoria,2,2,2,2,100,100,"100,75,50",FALSE
+FAhAwtjQZFsYZk8ifGnWCtukn93ewpq8zroedgAvvoyg,4N3uGpbafTxenHWnqheiZhscB1qYNdH5pdxsBCn5ULR5,Full Time Result,EventResultFullTime,Freiburg,0,2,2,2,100,100,"100,75,50",FALSE
+FAhAwtjQZFsYZk8ifGnWCtukn93ewpq8zroedgAvvoyg,4N3uGpbafTxenHWnqheiZhscB1qYNdH5pdxsBCn5ULR5,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+FAhAwtjQZFsYZk8ifGnWCtukn93ewpq8zroedgAvvoyg,4N3uGpbafTxenHWnqheiZhscB1qYNdH5pdxsBCn5ULR5,Full Time Result,EventResultFullTime,Schalke 04,2,2,2,2,100,100,"100,75,50",FALSE
+B2hEJv7jRNG2VAykkbAfCizxfdT91pqyjC5AgvTKDZro,4gwp3wEnvCYtQ9Z4QGkJNfxRzoU7JYyvVKpza1QbLcH1,Winner,EventResultWinner,Golden State Warriors,0,2,2,2,100,100,"100,75,50",FALSE
+B2hEJv7jRNG2VAykkbAfCizxfdT91pqyjC5AgvTKDZro,4gwp3wEnvCYtQ9Z4QGkJNfxRzoU7JYyvVKpza1QbLcH1,Winner,EventResultWinner,Sacramento Kings,1,2,2,2,100,100,"100,75,50",FALSE
+8yDdmUCsynjrniU1ycpRZQ9Ehq93dhstq1ZNerzR8xrn,4sW1L8FDVDrdjx6bsmuJZLYGHyHujCnKSguD7meTehvJ,Full Time Result,EventResultFullTime,Bayer Leverkusen,0,2,2,2,100,100,"100,75,50",FALSE
+8yDdmUCsynjrniU1ycpRZQ9Ehq93dhstq1ZNerzR8xrn,4sW1L8FDVDrdjx6bsmuJZLYGHyHujCnKSguD7meTehvJ,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+8yDdmUCsynjrniU1ycpRZQ9Ehq93dhstq1ZNerzR8xrn,4sW1L8FDVDrdjx6bsmuJZLYGHyHujCnKSguD7meTehvJ,Full Time Result,EventResultFullTime,RB Leipzig,2,2,2,2,100,100,"100,75,50",FALSE
+2qsQkmk9mCaYMfWLwxGbpqD2TweEqPsgqvX4hJWRDcik,4tjNjWRqJ1e1cyvbA5NkCMCrg1g4pN8iYuxE1apyen8L,Winner,EventResultWinner,Los Angeles Lakers,0,2,2,2,100,100,"100,75,50",FALSE
+2qsQkmk9mCaYMfWLwxGbpqD2TweEqPsgqvX4hJWRDcik,4tjNjWRqJ1e1cyvbA5NkCMCrg1g4pN8iYuxE1apyen8L,Winner,EventResultWinner,Memphis Grizzlies,1,2,2,2,100,100,"100,75,50",FALSE
+HMGofCdF9kspAkL27erNpwWX99naoZXWoK2YRMAVkmj6,52vKK2u6fbnzXSQXNSNgtyVBE3qBw9Z89YFazAZtqvf6,Winner,EventResultWinner,Sacramento Kings,0,2,2,2,100,100,"100,75,50",FALSE
+HMGofCdF9kspAkL27erNpwWX99naoZXWoK2YRMAVkmj6,52vKK2u6fbnzXSQXNSNgtyVBE3qBw9Z89YFazAZtqvf6,Winner,EventResultWinner,Golden State Warriors,1,2,2,2,100,100,"100,75,50",FALSE
+CAEAnakZy7wnyTv3NLRx41yFwDpGD4jpcrtZkxZ36PqJ,5814snnao7faqn3sovwdutQjc1pgWC2Kj5Rd8Zme2i25,Full Time Result,EventResultFullTime,Sassuolo,0,2,2,2,100,100,"100,75,50",FALSE
+CAEAnakZy7wnyTv3NLRx41yFwDpGD4jpcrtZkxZ36PqJ,5814snnao7faqn3sovwdutQjc1pgWC2Kj5Rd8Zme2i25,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+CAEAnakZy7wnyTv3NLRx41yFwDpGD4jpcrtZkxZ36PqJ,5814snnao7faqn3sovwdutQjc1pgWC2Kj5Rd8Zme2i25,Full Time Result,EventResultFullTime,Empoli,2,2,2,2,100,100,"100,75,50",FALSE
+DuaGuzroLzV9vHyhiaATkD5ppMqAM48wVnFV9EjtA4F2,5GXdYaR73rQ6tw8k59Bg2zzhi7SzEknAnQjLVHNDFLcc,Full Time Result,EventResultFullTime,Cremonese,0,2,2,2,100,100,"100,75,50",FALSE
+DuaGuzroLzV9vHyhiaATkD5ppMqAM48wVnFV9EjtA4F2,5GXdYaR73rQ6tw8k59Bg2zzhi7SzEknAnQjLVHNDFLcc,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+DuaGuzroLzV9vHyhiaATkD5ppMqAM48wVnFV9EjtA4F2,5GXdYaR73rQ6tw8k59Bg2zzhi7SzEknAnQjLVHNDFLcc,Full Time Result,EventResultFullTime,Hellas Verona,2,2,2,2,100,100,"100,75,50",FALSE
+4W7UZeax7LBqQWw9CPEwPij5EZW1thsBV4yHWTCWovmc,5UidH3DVbhTdpZE7dxcQpnQRPigg23cuGqymuWoiEefM,Full Time Result,EventResultFullTime,Spezia Calcio,0,2,2,2,100,100,"100,75,50",FALSE
+4W7UZeax7LBqQWw9CPEwPij5EZW1thsBV4yHWTCWovmc,5UidH3DVbhTdpZE7dxcQpnQRPigg23cuGqymuWoiEefM,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+4W7UZeax7LBqQWw9CPEwPij5EZW1thsBV4yHWTCWovmc,5UidH3DVbhTdpZE7dxcQpnQRPigg23cuGqymuWoiEefM,Full Time Result,EventResultFullTime,Monza,2,2,2,2,100,100,"100,75,50",FALSE
+6XyUSCEqCs1rNhZJKYcqf8xQf3jUjoqMt1EeQ3azYzTZ,6NyCZgGFzxjyQSL7DhpBodfzuRQhV5i4mtPsfdqxgA2F,Winner,EventResultWinner,Milwaukee Bucks,0,2,2,2,100,100,"100,75,50",FALSE
+6XyUSCEqCs1rNhZJKYcqf8xQf3jUjoqMt1EeQ3azYzTZ,6NyCZgGFzxjyQSL7DhpBodfzuRQhV5i4mtPsfdqxgA2F,Winner,EventResultWinner,Miami Heat,1,2,2,2,100,100,"100,75,50",FALSE
+iFkEWogRnWKxdsg1oLSr7gG5RGP4dv3RsPDuDuZwuZK,6VLvBfHUBYLcbEzPCEHKqfSEKpmFrEJWcgmZvivoxeua,Winner,EventResultWinner,Phoenix Suns,0,2,2,2,100,100,"100,75,50",FALSE
+iFkEWogRnWKxdsg1oLSr7gG5RGP4dv3RsPDuDuZwuZK,6VLvBfHUBYLcbEzPCEHKqfSEKpmFrEJWcgmZvivoxeua,Winner,EventResultWinner,Los Angeles Clippers,1,2,2,2,100,100,"100,75,50",FALSE
+8uPCRoJjAMLRkUfGJm7sgk8PyreFcp4r646439ufY9Nt,6XmdvYx2xUgMTXm9eSMKW6TXPLM3egXadETKKE7qyvfE,Full Time Result,EventResultFullTime,Juventus,0,2,2,2,100,100,"100,75,50",FALSE
+8uPCRoJjAMLRkUfGJm7sgk8PyreFcp4r646439ufY9Nt,6XmdvYx2xUgMTXm9eSMKW6TXPLM3egXadETKKE7qyvfE,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+8uPCRoJjAMLRkUfGJm7sgk8PyreFcp4r646439ufY9Nt,6XmdvYx2xUgMTXm9eSMKW6TXPLM3egXadETKKE7qyvfE,Full Time Result,EventResultFullTime,Napoli,2,2,2,2,100,100,"100,75,50",FALSE
+4zHEBGGF7Bspj6CxZcUzs9Kw3vKXNa9R4dAK1L9FUqWG,7CYMeajYhqVxo7c6bTCD1bAkHVyHkGnaR121dbZaLfm,Full Time Result,EventResultFullTime,Ajaccio,0,2,2,2,100,100,"100,75,50",FALSE
+4zHEBGGF7Bspj6CxZcUzs9Kw3vKXNa9R4dAK1L9FUqWG,7CYMeajYhqVxo7c6bTCD1bAkHVyHkGnaR121dbZaLfm,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+4zHEBGGF7Bspj6CxZcUzs9Kw3vKXNa9R4dAK1L9FUqWG,7CYMeajYhqVxo7c6bTCD1bAkHVyHkGnaR121dbZaLfm,Full Time Result,EventResultFullTime,Brest,2,2,2,2,100,100,"100,75,50",FALSE
+BYNwUDUgXQWkfGLUjD5Y5a2Pz5f8o1262FJaKrvV6MX8,7Jw8R3eaySMRLG8MjB4V1tijK3wVFUyotaWBMbbCUJjV,Winner,EventResultWinner,Boston Celtics,0,2,2,2,100,100,"100,75,50",FALSE
+BYNwUDUgXQWkfGLUjD5Y5a2Pz5f8o1262FJaKrvV6MX8,7Jw8R3eaySMRLG8MjB4V1tijK3wVFUyotaWBMbbCUJjV,Winner,EventResultWinner,Atlanta Hawks,1,2,2,2,100,100,"100,75,50",FALSE
+2z44bSjRDyfrz4WY4NPUXMGn3ZY9weqcWpPenH5rhjYu,7VAfVAXpaMuxn5MpAfNvLJjnu9ezWZCBq5iejAcdZTLK,Winner,EventResultWinner,Los Angeles Clippers,0,2,2,2,100,100,"100,75,50",FALSE
+2z44bSjRDyfrz4WY4NPUXMGn3ZY9weqcWpPenH5rhjYu,7VAfVAXpaMuxn5MpAfNvLJjnu9ezWZCBq5iejAcdZTLK,Winner,EventResultWinner,Phoenix Suns,1,2,2,2,100,100,"100,75,50",FALSE
+gSVarQKrh4ATmRjSuxtCgiD5NGamaykGbr2qEQB41wA,7Z5BXqmohsekz7BhDK85CunthuSLHBRpiiLbDrzbEHgN,Winner,EventResultWinner,Royal Challengers Bangalore,0,2,2,2,100,100,"100,75,50",FALSE
+gSVarQKrh4ATmRjSuxtCgiD5NGamaykGbr2qEQB41wA,7Z5BXqmohsekz7BhDK85CunthuSLHBRpiiLbDrzbEHgN,Winner,EventResultWinner,Rajasthan Royals,1,2,2,2,100,100,"100,75,50",FALSE
+8VwYRidRPcbtef6NtqDUSwBPMAgnMMnzTYbieXqMh6xG,7krsFSXfo4KQ3ByozEi1WtFvzhjSTokX64mTLp8CPfrH,Full Time Result,EventResultFullTime,Reims,0,2,2,2,100,100,"100,75,50",FALSE
+8VwYRidRPcbtef6NtqDUSwBPMAgnMMnzTYbieXqMh6xG,7krsFSXfo4KQ3ByozEi1WtFvzhjSTokX64mTLp8CPfrH,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+8VwYRidRPcbtef6NtqDUSwBPMAgnMMnzTYbieXqMh6xG,7krsFSXfo4KQ3ByozEi1WtFvzhjSTokX64mTLp8CPfrH,Full Time Result,EventResultFullTime,Strasbourg,2,2,2,2,100,100,"100,75,50",FALSE
+GrNmddxet9T3FdBgtVgw4o4grMyBxEgGAHTjP9UTVBLh,9Ld9idhmg6JVsNuk9ugLcDrJcTS7WCQfAGByK9QdPNoz,Winner,EventResultWinner,Atlanta Hawks,0,2,2,2,100,100,"100,75,50",FALSE
+GrNmddxet9T3FdBgtVgw4o4grMyBxEgGAHTjP9UTVBLh,9Ld9idhmg6JVsNuk9ugLcDrJcTS7WCQfAGByK9QdPNoz,Winner,EventResultWinner,Boston Celtics,1,2,2,2,100,100,"100,75,50",FALSE
+HD7wLzXQuvMzP2s6eUeP4Lc1upZoJNsPodzd2v35iXgP,9QN1VVRwDiE8pVs5J2U5bp8xKH4jGNwudZY9Syer6peT,Full Time Result,EventResultFullTime,AS Roma,0,2,2,2,100,100,"100,75,50",FALSE
+HD7wLzXQuvMzP2s6eUeP4Lc1upZoJNsPodzd2v35iXgP,9QN1VVRwDiE8pVs5J2U5bp8xKH4jGNwudZY9Syer6peT,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+HD7wLzXQuvMzP2s6eUeP4Lc1upZoJNsPodzd2v35iXgP,9QN1VVRwDiE8pVs5J2U5bp8xKH4jGNwudZY9Syer6peT,Full Time Result,EventResultFullTime,AC Milan,2,2,2,2,100,100,"100,75,50",FALSE
+FTnP7hMaEyKZ6HAZJVPtQHhqxu8PBfiYAhj2SwTyu5ka,9SvLHxs24oZMSsghLf6tUNpxAy5jdiwBYSeNfZbVFSrT,Winner,EventResultWinner,Cleveland Cavaliers,0,2,2,2,100,100,"100,75,50",FALSE
+FTnP7hMaEyKZ6HAZJVPtQHhqxu8PBfiYAhj2SwTyu5ka,9SvLHxs24oZMSsghLf6tUNpxAy5jdiwBYSeNfZbVFSrT,Winner,EventResultWinner,New York Knicks,1,2,2,2,100,100,"100,75,50",FALSE
+BVPFjXu923FQY3jaFah89eWtRQQuYxR52uqc5Qcd9t7D,9WdzwW7TrWzNZKtip6FKwcRMjCqRZis5mkJB5ira2T5K,Full Time Result,EventResultFullTime,Olympique Lyon,0,2,2,2,100,100,"100,75,50",FALSE
+BVPFjXu923FQY3jaFah89eWtRQQuYxR52uqc5Qcd9t7D,9WdzwW7TrWzNZKtip6FKwcRMjCqRZis5mkJB5ira2T5K,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+BVPFjXu923FQY3jaFah89eWtRQQuYxR52uqc5Qcd9t7D,9WdzwW7TrWzNZKtip6FKwcRMjCqRZis5mkJB5ira2T5K,Full Time Result,EventResultFullTime,Olympique Marseille,2,2,2,2,100,100,"100,75,50",FALSE
+CLVbrdt67Dsr8uA5ahWNva6CdPPfHWaymqLydHZESimK,AwpLEHQET5XLpVxLUhKmi6zJYsHCbVwfYBQAn63VoJ2j,Full Time Result,EventResultFullTime,Nice,0,2,2,2,100,100,"100,75,50",FALSE
+CLVbrdt67Dsr8uA5ahWNva6CdPPfHWaymqLydHZESimK,AwpLEHQET5XLpVxLUhKmi6zJYsHCbVwfYBQAn63VoJ2j,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+CLVbrdt67Dsr8uA5ahWNva6CdPPfHWaymqLydHZESimK,AwpLEHQET5XLpVxLUhKmi6zJYsHCbVwfYBQAn63VoJ2j,Full Time Result,EventResultFullTime,Clermont Foot,2,2,2,2,100,100,"100,75,50",FALSE
+E1w2hgLDLjkv4ENLigLRwghqJDketfdT9zng4CeFE7CN,B1WDojF5FCqgDCSFUyRbksVczyRh8QkjoeYJkYWr135g,Winner,EventResultWinner,Brooklyn Nets,0,2,2,2,100,100,"100,75,50",FALSE
+E1w2hgLDLjkv4ENLigLRwghqJDketfdT9zng4CeFE7CN,B1WDojF5FCqgDCSFUyRbksVczyRh8QkjoeYJkYWr135g,Winner,EventResultWinner,Philadelphia 76ers,1,2,2,2,100,100,"100,75,50",FALSE
+9zUDSzRPY5kLTLu8c4TSfYNBYNfjbvBPWn4nqyeDyupQ,BHWYLvXtcqooB9pLtm18bQn8w93aZuQ6RYSuTQj3Ynph,Full Time Result,EventResultFullTime,Borussia Dortmund,0,2,2,2,100,100,"100,75,50",FALSE
+9zUDSzRPY5kLTLu8c4TSfYNBYNfjbvBPWn4nqyeDyupQ,BHWYLvXtcqooB9pLtm18bQn8w93aZuQ6RYSuTQj3Ynph,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+9zUDSzRPY5kLTLu8c4TSfYNBYNfjbvBPWn4nqyeDyupQ,BHWYLvXtcqooB9pLtm18bQn8w93aZuQ6RYSuTQj3Ynph,Full Time Result,EventResultFullTime,Eintracht Frankfurt,2,2,2,2,100,100,"100,75,50",FALSE
+CsQ6bvRpCBYquTyJbLF41xbotaA6hjXqLm1FDbPc1izt,C46QDGwtwGgTR6QJ13HrGH4Ddpv4SdWhxYx3nK4bfJh,Winner,EventResultWinner,New York Knicks,0,2,2,2,100,100,"100,75,50",FALSE
+CsQ6bvRpCBYquTyJbLF41xbotaA6hjXqLm1FDbPc1izt,C46QDGwtwGgTR6QJ13HrGH4Ddpv4SdWhxYx3nK4bfJh,Winner,EventResultWinner,Cleveland Cavaliers,1,2,2,2,100,100,"100,75,50",FALSE
+6sc6usceit7iagGp9dyPiz2ujVF2QeNqVkGcvi8PDwq4,CJbjjucrWrZsPamguuL1EujWL1pLWYcH4J9zaZzeeMYC,Full Time Result,EventResultFullTime,Montpellier,0,2,2,2,100,100,"100,75,50",FALSE
+6sc6usceit7iagGp9dyPiz2ujVF2QeNqVkGcvi8PDwq4,CJbjjucrWrZsPamguuL1EujWL1pLWYcH4J9zaZzeeMYC,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+6sc6usceit7iagGp9dyPiz2ujVF2QeNqVkGcvi8PDwq4,CJbjjucrWrZsPamguuL1EujWL1pLWYcH4J9zaZzeeMYC,Full Time Result,EventResultFullTime,Rennes,2,2,2,2,100,100,"100,75,50",FALSE
+8qrSR5E1pAnQbZWk565p3jmu2cPyypFw2wSD1NmLDAh8,Ch1zT9x5UD737rbzXWUKju12sC6dRBekXDogNMeLd2a2,Full Time Result,EventResultFullTime,Lecce,0,2,2,2,100,100,"100,75,50",FALSE
+8qrSR5E1pAnQbZWk565p3jmu2cPyypFw2wSD1NmLDAh8,Ch1zT9x5UD737rbzXWUKju12sC6dRBekXDogNMeLd2a2,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+8qrSR5E1pAnQbZWk565p3jmu2cPyypFw2wSD1NmLDAh8,Ch1zT9x5UD737rbzXWUKju12sC6dRBekXDogNMeLd2a2,Full Time Result,EventResultFullTime,Udinese,2,2,2,2,100,100,"100,75,50",FALSE
+9vnYMuZb9vH7uTFPPVikD8KYyHH88pxYKNXW3D2XkSvy,D89gFRajeDJ7F7gBrpyDAbxREZ8MVgvKdwKc1KbTRdwp,Full Time Result,EventResultFullTime,Bologna,0,2,2,2,100,100,"100,75,50",FALSE
+9vnYMuZb9vH7uTFPPVikD8KYyHH88pxYKNXW3D2XkSvy,D89gFRajeDJ7F7gBrpyDAbxREZ8MVgvKdwKc1KbTRdwp,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+9vnYMuZb9vH7uTFPPVikD8KYyHH88pxYKNXW3D2XkSvy,D89gFRajeDJ7F7gBrpyDAbxREZ8MVgvKdwKc1KbTRdwp,Full Time Result,EventResultFullTime,Juventus,2,2,2,2,100,100,"100,75,50",FALSE
+8pjqf651VirvVkgFujmGKQD5S8DrB1wLxWp7RwijZJCk,DWYckawoUENE9ostHxwsKKbrHhg1Rn5YJ5wHxMGHWJLm,Full Time Result,EventResultFullTime,Monza,0,2,2,2,100,100,"100,75,50",FALSE
+8pjqf651VirvVkgFujmGKQD5S8DrB1wLxWp7RwijZJCk,DWYckawoUENE9ostHxwsKKbrHhg1Rn5YJ5wHxMGHWJLm,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+8pjqf651VirvVkgFujmGKQD5S8DrB1wLxWp7RwijZJCk,DWYckawoUENE9ostHxwsKKbrHhg1Rn5YJ5wHxMGHWJLm,Full Time Result,EventResultFullTime,Fiorentina,2,2,2,2,100,100,"100,75,50",FALSE
+H7W5x7FYKvdCLKdzmNJs6sR5XSyPLDAUbJHZRX72BfUw,DZrmUniAQtNkoBjstVAXrRnd5D2CERPBvk9bqmceRDFT,Full Time Result,EventResultFullTime,Nantes,0,2,2,2,100,100,"100,75,50",FALSE
+H7W5x7FYKvdCLKdzmNJs6sR5XSyPLDAUbJHZRX72BfUw,DZrmUniAQtNkoBjstVAXrRnd5D2CERPBvk9bqmceRDFT,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+H7W5x7FYKvdCLKdzmNJs6sR5XSyPLDAUbJHZRX72BfUw,DZrmUniAQtNkoBjstVAXrRnd5D2CERPBvk9bqmceRDFT,Full Time Result,EventResultFullTime,Troyes,2,2,2,2,100,100,"100,75,50",FALSE
+4QGtmcUtU1k7NrsDPvHHnL2R9WaTtUETay9bkGrbg792,Dn76mXU2CQVGWfm8dfaqWg1D66tRmDZtSbX1rHezh5Hp,Full Time Result,EventResultFullTime,AC Milan,0,2,2,2,100,100,"100,75,50",FALSE
+4QGtmcUtU1k7NrsDPvHHnL2R9WaTtUETay9bkGrbg792,Dn76mXU2CQVGWfm8dfaqWg1D66tRmDZtSbX1rHezh5Hp,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+4QGtmcUtU1k7NrsDPvHHnL2R9WaTtUETay9bkGrbg792,Dn76mXU2CQVGWfm8dfaqWg1D66tRmDZtSbX1rHezh5Hp,Full Time Result,EventResultFullTime,Lecce,2,2,2,2,100,100,"100,75,50",FALSE
+HnyMbo2f987fEdao8CPG6U9f4NgB2SjSqaheYnrY2Q6i,Dta53STtXunvq6nbPmpDYFSEJncEZsj5KFDyim1ktUdX,Full Time Result,EventResultFullTime,Borussia Moenchengladbach,0,2,2,2,100,100,"100,75,50",FALSE
+HnyMbo2f987fEdao8CPG6U9f4NgB2SjSqaheYnrY2Q6i,Dta53STtXunvq6nbPmpDYFSEJncEZsj5KFDyim1ktUdX,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+HnyMbo2f987fEdao8CPG6U9f4NgB2SjSqaheYnrY2Q6i,Dta53STtXunvq6nbPmpDYFSEJncEZsj5KFDyim1ktUdX,Full Time Result,EventResultFullTime,Union Berlin,2,2,2,2,100,100,"100,75,50",FALSE
+8AwfXQ757kqm6JBP6MxLfPXTGZrcSq1HjnHGwuUdaPsp,EdPepSUVoQWS5cTRgEhafkpdymj2uYumdJd4MHLXY9X6,Winner,EventResultWinner,Kolkata Knight Riders,0,2,2,2,100,100,"100,75,50",FALSE
+8AwfXQ757kqm6JBP6MxLfPXTGZrcSq1HjnHGwuUdaPsp,EdPepSUVoQWS5cTRgEhafkpdymj2uYumdJd4MHLXY9X6,Winner,EventResultWinner,Chennai Super Kings,1,2,2,2,100,100,"100,75,50",FALSE
+6kLNijN3qdV4PhK4t9ie8Pk2ZMRxb3FwV12sfbT4ePek,En25rnGtj5yCm2aDzm7DPF5bQgChmrUwh5CqhnGuuaie,Full Time Result,EventResultFullTime,Udinese,0,2,2,2,100,100,"100,75,50",FALSE
+6kLNijN3qdV4PhK4t9ie8Pk2ZMRxb3FwV12sfbT4ePek,En25rnGtj5yCm2aDzm7DPF5bQgChmrUwh5CqhnGuuaie,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+6kLNijN3qdV4PhK4t9ie8Pk2ZMRxb3FwV12sfbT4ePek,En25rnGtj5yCm2aDzm7DPF5bQgChmrUwh5CqhnGuuaie,Full Time Result,EventResultFullTime,Cremonese,2,2,2,2,100,100,"100,75,50",FALSE
+GdWM6jMWtXynHutSo3E3xJVMT4dZoCB9PxBKVWsXP1fW,F53uvutFTQTJHTiQQyAjd9TXG1KNHNz2BzkRst54W9UM,Full Time Result,EventResultFullTime,Atalanta,0,2,2,2,100,100,"100,75,50",FALSE
+GdWM6jMWtXynHutSo3E3xJVMT4dZoCB9PxBKVWsXP1fW,F53uvutFTQTJHTiQQyAjd9TXG1KNHNz2BzkRst54W9UM,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+GdWM6jMWtXynHutSo3E3xJVMT4dZoCB9PxBKVWsXP1fW,F53uvutFTQTJHTiQQyAjd9TXG1KNHNz2BzkRst54W9UM,Full Time Result,EventResultFullTime,AS Roma,2,2,2,2,100,100,"100,75,50",FALSE
+6DBRzaiy2jeLKr5s4C9m2gd4cxjhpxdPaY6rpusNNkAe,FWbvzyfG5yFhDb2YJioatjHfVaiTZe5vScKy72wji3Rp,Winner,EventResultWinner,Sunrisers Hyderabad,0,2,2,2,100,100,"100,75,50",FALSE
+6DBRzaiy2jeLKr5s4C9m2gd4cxjhpxdPaY6rpusNNkAe,FWbvzyfG5yFhDb2YJioatjHfVaiTZe5vScKy72wji3Rp,Winner,EventResultWinner,Delhi Capitals,1,2,2,2,100,100,"100,75,50",FALSE
+DfXUPmTHy5Xb2DjrL8ZqAk7R7pa7vUMx9jLEkoJdPgRk,GA6cVmbUvWv1M4gdessJQN8ZcDbznCqmnz8bFdCQstB2,Full Time Result,EventResultFullTime,Lorient,0,2,2,2,100,100,"100,75,50",FALSE
+DfXUPmTHy5Xb2DjrL8ZqAk7R7pa7vUMx9jLEkoJdPgRk,GA6cVmbUvWv1M4gdessJQN8ZcDbznCqmnz8bFdCQstB2,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+DfXUPmTHy5Xb2DjrL8ZqAk7R7pa7vUMx9jLEkoJdPgRk,GA6cVmbUvWv1M4gdessJQN8ZcDbznCqmnz8bFdCQstB2,Full Time Result,EventResultFullTime,Toulouse,2,2,2,2,100,100,"100,75,50",FALSE
+EEQ1StSXj4ZBcy1ZCM9AmgR317SycqSXoWt3yMa3WZP2,H8fY4WURAEdJcqF687xWrHMEXW4w41FjrXhYGrAsikFu,Full Time Result,EventResultFullTime,Napoli,0,2,2,2,100,100,"100,75,50",FALSE
+EEQ1StSXj4ZBcy1ZCM9AmgR317SycqSXoWt3yMa3WZP2,H8fY4WURAEdJcqF687xWrHMEXW4w41FjrXhYGrAsikFu,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+EEQ1StSXj4ZBcy1ZCM9AmgR317SycqSXoWt3yMa3WZP2,H8fY4WURAEdJcqF687xWrHMEXW4w41FjrXhYGrAsikFu,Full Time Result,EventResultFullTime,Salernitana,2,2,2,2,100,100,"100,75,50",FALSE
+ExNNnzaDyK87kjR442CJch5Ds9z9mUb5FzeX32XXdhX1,HEjFBBGCkhV3ERxXqKscajkjwjN1cF6Az8mKvkx1SFNb,Full Time Result,EventResultFullTime,Inter Milan,0,2,2,2,100,100,"100,75,50",FALSE
+ExNNnzaDyK87kjR442CJch5Ds9z9mUb5FzeX32XXdhX1,HEjFBBGCkhV3ERxXqKscajkjwjN1cF6Az8mKvkx1SFNb,Full Time Result,EventResultFullTime,Draw,1,2,2,2,100,100,"100,75,50",FALSE
+ExNNnzaDyK87kjR442CJch5Ds9z9mUb5FzeX32XXdhX1,HEjFBBGCkhV3ERxXqKscajkjwjN1cF6Az8mKvkx1SFNb,Full Time Result,EventResultFullTime,Lazio,2,2,2,2,100,100,"100,75,50",FALSE
+9gfWxpJzRA11ogPnX8bnr9rDbL7ZtpeqrnatiM9JqPSs,HxwYzpk1YK4Jb3bgaYdvLxxB43XwcaKQSWCjRNTFG7Fv,Winner,EventResultWinner,Miami Heat,0,2,2,2,100,100,"100,75,50",FALSE
+9gfWxpJzRA11ogPnX8bnr9rDbL7ZtpeqrnatiM9JqPSs,HxwYzpk1YK4Jb3bgaYdvLxxB43XwcaKQSWCjRNTFG7Fv,Winner,EventResultWinner,Milwaukee Bucks,1,2,2,2,100,100,"100,75,50",FALSE
+46iKd2fpwemkBGyhqtSZ5vEdUDbNPfeiWfHCKSP1tnWa,pQJnp2qJfJg82ZFCPk41uSpxvmRWYgDeqFXdEW4d539,Winner,EventResultWinner,Miami Heat,0,2,2,2,100,100,"100,75,50",FALSE
+46iKd2fpwemkBGyhqtSZ5vEdUDbNPfeiWfHCKSP1tnWa,pQJnp2qJfJg82ZFCPk41uSpxvmRWYgDeqFXdEW4d539,Winner,EventResultWinner,Milwaukee Bucks,1,2,2,2,100,100,"100,75,50",FALSE
+DSVFxY8cs2CFVbRTVmg21oShG2QGDaffpiirV2o3aX53,vRRpc9LHKnpkuDSyYgfwV2dWXADPgq6ydpGBkhLnQcR,Winner,EventResultWinner,Memphis Grizzlies,0,2,2,2,100,100,"100,75,50",FALSE
+DSVFxY8cs2CFVbRTVmg21oShG2QGDaffpiirV2o3aX53,vRRpc9LHKnpkuDSyYgfwV2dWXADPgq6ydpGBkhLnQcR,Winner,EventResultWinner,Los Angeles Lakers,1,2,2,2,100,100,"100,75,50",FALSE

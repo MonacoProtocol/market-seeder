@@ -8,10 +8,13 @@ export const csvHeaders = [
     "marketTitle",
     "marketType",
     "outcome",
-    "forMidpoint",
-    "forStakes",
-    "againstMidpoint",
-    "againstStakes",
+    "outcomeIndex",
+    "truePrice",
+    "spread",
+    "steps",
+    "toReturn",
+    "toLose",
+    "depthPercentages",
     "seed"
 ]
 
@@ -79,19 +82,5 @@ export class CsvFile {
         .on("data", (row) => data.push(row))
         .on("end", () => resolve(data));
     });
-  }
-
-  async readAsObjects(){
-    const dataPoints = await this.read()
-    let objects = [] as any[]
-    dataPoints.map((dataPoint) => {
-        let object = {}
-        let attributes = [...this.headers]
-        attributes.map(function (attribute, i){
-            object[attributes[i]] = dataPoint[attribute]
-        })
-        objects.push(object)
-    })
-    return objects
   }
 }
