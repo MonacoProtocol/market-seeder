@@ -51,7 +51,7 @@ export function getConfig(): Config {
     ),
     default_true_price: parseFloat(process.env.DEFAULT_TRUE_PRICE),
     default_spread: parseFloat(process.env.DEFAULT_SPREAD),
-    default_steps: parseFloat(process.env.DEFAULT_SEPS),
+    default_steps: parseFloat(process.env.DEFAULT_STEPS),
     default_to_return: parseFloat(process.env.DEFAULT_TO_RETURN),
     default_to_lose: parseFloat(process.env.DEFAULT_TO_LOSE),
     default_depth_percentages: floatListFromString(

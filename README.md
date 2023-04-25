@@ -102,11 +102,12 @@ Following the generation of the CSv, you should edit the values to fulfil your s
 
 ⚠️ Market outcomes will only be seeded if the `seed` value in the csv reads `TRUE` ⚠️
 
-In the example below, only the `Denver Nuggets` outcome would be seeded.
+In the example below, only the `Mumbai Indians` outcome would be seeded on the `Top Batter Team` market.
 
 ```
-ABtq8rQNNRoXyqaNQUVNaubcR5PyFjucogZfvzUcGzbZ,35DX3LrSQ2i6FVenhEErqbWd6sTwp9hFmAve7A5uJDrn,Winner,EventResultWinner,Minnesota Timberwolves,0,2,2,2,100,100,"100,75,50",FALSE
-ABtq8rQNNRoXyqaNQUVNaubcR5PyFjucogZfvzUcGzbZ,35DX3LrSQ2i6FVenhEErqbWd6sTwp9hFmAve7A5uJDrn,Winner,EventResultWinner,Denver Nuggets,1,2,2,2,100,100,"100,75,50",TRUE
+marketPk,eventPk,marketTitle,marketType,outcome,outcomeIndex,truePrice,spread,steps,toReturn,toLose,depthPercentages,seed
+4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD,141cYL6JuKMy3FCx9cAdXRohkFhdj6RCosM3aWAp7cB7,Top Batter Team,EventResultFullTime,Gujarat Titans,0,2,2,2,100,100,"100,75,50",FALSE
+4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD,141cYL6JuKMy3FCx9cAdXRohkFhdj6RCosM3aWAp7cB7,Top Batter Team,EventResultFullTime,Mumbai Indians,1,2,3,1,200,100,"100,75,50",TRUE
 ```
 
 To preview how your markets would seed, run the seeding script with a `false` flag.
@@ -115,8 +116,59 @@ To preview how your markets would seed, run the seeding script with a `false` fl
 npm run seedOutcomesFromCsv <csv name> false
 ```
 
-If you are happy with the output of the dry run, you can then seed the markets by switching to a `true` flag.
+Below you can see what stake, prices, and returns, would be used with the following settings:
+
+- True Price `2`
+- Spread `3`
+- Steps `1`
+- To Return `200`
+- To Lose `100`
+- Depth percentages of `100,75,50`
+
+As there are 3 depth percentages, 3 orders are placed on each side: `FOR` and `AGAINST`.
+
+Please note that for `AGAINST` (lay) bets, risk is calculated from the stake and price on The Monaco Protocol.
+
+```
+Market 4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD | Outcome: Mumbai Indians | Title: Top Batter Team ℹ️
+FOR
+[
+  { stake: 98.52, price: 2.03, return: 200 },
+  { stake: 73.17, price: 2.05, return: 150 },
+  { stake: 48.31, price: 2.07, return: 100 }
+]
+AGAINST
+[
+  { stake: 50.76, price: 1.97, return: 100 },
+  { stake: 38.46, price: 1.95, return: 75 },
+  { stake: 25.91, price: 1.93, return: 50 }
+]
+```
+
+If, for example you then decided to change settings, perhaps to only seed to a depth of 2 `100, 75` and to change your `ToLose` to `150` then update your csv and try another dry-run.
+
+```
+marketPk,eventPk,marketTitle,marketType,outcome,outcomeIndex,truePrice,spread,steps,toReturn,toLose,depthPercentages,seed
+4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD,141cYL6JuKMy3FCx9cAdXRohkFhdj6RCosM3aWAp7cB7,Top Batter Team,EventResultFullTime,Mumbai Indians,1,2,3,1,200,150,"100,75",TRUE
+```
+
+```
+FOR
+[
+  { stake: 98.52, price: 2.03, return: 200 },
+  { stake: 73.17, price: 2.05, return: 150 }
+]
+AGAINST
+[
+  { stake: 76.14, price: 1.97, return: 150 },
+  { stake: 57.69, price: 1.95, return: 112.5 }
+]
+```
+
+Once happy with the output of the dryrun, and the orders it will place, you can then seed the markets by switching to a `true` flag.
 
 ```
 npm run seedOutcomesFromCsv <csv name> true
 ```
+
+This will place the orders, on the market outcomes. If will do so in an asynchronous manner to aid performance.
