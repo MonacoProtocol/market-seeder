@@ -1,3 +1,0 @@
-marketPk,eventPk,marketTitle,marketType,outcome,outcomeIndex,truePrice,spread,steps,toReturn,toLose,depthPercentages,seed
-4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD,141cYL6JuKMy3FCx9cAdXRohkFhdj6RCosM3aWAp7cB7,Top Batter Team,EventResultFullTime,Gujarat Titans,0,2,2,2,100,100,"100,75,50",FALSE
-4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD,141cYL6JuKMy3FCx9cAdXRohkFhdj6RCosM3aWAp7cB7,Top Batter Team,EventResultFullTime,Mumbai Indians,1,2,3,1,200,150,"100,75",TRUE

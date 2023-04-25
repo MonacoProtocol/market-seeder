@@ -172,3 +172,11 @@ npm run seedOutcomesFromCsv <csv name> true
 ```
 
 This will place the orders, on the market outcomes. If will do so in an asynchronous manner to aid performance.
+
+# Cancel Orders
+
+A script has been provided to cancel all orders for your wallet on the specified market at invocation. If a `false` flag is passed then a list of orders will be returned. If a `true` flag is passed then an attempt will be made to cancel all the cancellable orders on that market for your wallet.
+
+```
+npm run cancelOrders <marketPk> <true/false>
+```

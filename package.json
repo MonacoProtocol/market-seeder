@@ -1,6 +1,6 @@
 {
     "name": "@monaco-protocol/market-seeder",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Monaco Protocol Market Seeder",
     "author": "Monaco Protocol",
     "license": "MIT",
@@ -9,6 +9,7 @@
     "scripts": {
         "generateSeedCsv": "ts-node src/generate_seed_csv.ts",
         "seedFromCsv": "ts-node src/seed_from_csv.ts",
+        "cancelOrders": "ts-node src/cancel_orders.ts",
         "format": "prettier --config .prettierrc 'src/**/*.(ts|js)' --write",
         "prepare": "husky install"
     },
