@@ -3,17 +3,20 @@ import * as csv from "fast-csv";
 import { FormatterOptionsArgs, Row, writeToStream } from "@fast-csv/format";
 
 export const csvHeaders = [
-    "marketPk",
-    "eventPk",
-    "marketTitle",
-    "marketType",
-    "outcome",
-    "forMidpoint",
-    "forStakes",
-    "againstMidpoint",
-    "againstStakes",
-    "seed"
-]
+  "marketPk",
+  "eventPk",
+  "marketTitle",
+  "marketType",
+  "outcome",
+  "outcomeIndex",
+  "truePrice",
+  "spread",
+  "steps",
+  "toReturn",
+  "toLose",
+  "depthPercentages",
+  "seed"
+];
 
 type CsvFileOpts = {
   path: string;
@@ -79,19 +82,5 @@ export class CsvFile {
         .on("data", (row) => data.push(row))
         .on("end", () => resolve(data));
     });
-  }
-
-  async readAsObjects(){
-    const dataPoints = await this.read()
-    let objects = [] as any[]
-    dataPoints.map((dataPoint) => {
-        let object = {}
-        let attributes = [...this.headers]
-        attributes.map(function (attribute, i){
-            object[attributes[i]] = dataPoint[attribute]
-        })
-        objects.push(object)
-    })
-    return objects
   }
 }

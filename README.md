@@ -1,8 +1,10 @@
 # Market Seeder
 
-Tool for seeding markets on The Monaco Protocol.
+Tool for seeding markets on The Monaco Protocol. The tool makes use of the Monaco Protocol [seed-calculator](https://github.com/MonacoProtocol/seed-calculator) package.
 
-⚠️ This tool is currently set up to run against the `stable` version of the protocol on `devnet` ⚠️
+![](docs/seed_example.png)
+
+Please aquatint yourself with the parameters outlined in the seed-calculator README as these are the same parameters used for this seeding tool.
 
 # Setup
 
@@ -10,16 +12,14 @@ Tool for seeding markets on The Monaco Protocol.
 
 - [Solana CLI](https://docs.solana.com/cli/install-solana-cli-tools) for wallet generation
 - [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install dependencies
-- Two CLI wallets
-  - One to place FOR orders
-  - One to place AGAINST orders
-  - If you use the same wallet when placing for and against orders, your current exposure would be used to manage risk
+- [A CLI wallet](https://docs.solana.com/wallet-guide/file-system-wallet)
   - Be sure to note the publicKey of the wallets in order to fund them with SOL and the token(s) used for the markets you are seeding
+  - Be sure to securely store your seed phrase
+  - _Never_ commit your wallet to a repository
 
 ```
 mkdir wallet
-solana-keygen new -o wallet/for.json
-solana-keygen new -o wallet/against.json
+solana-keygen new -o wallet/seeder.json
 ```
 
 ⚠️ The `wallet` dir is specified in `.gitignore` to help ensure you do not commit your wallet ⚠️
@@ -30,40 +30,49 @@ solana-keygen new -o wallet/against.json
 npm install
 ```
 
-## Environment Settings
+# Setting Environment
 
-### Dryrun Setting
-
-Use this setting to view what orders would be placed without actually placing them.
+Environmental settings are configured in `.env` files in `.env/.env-*` there are two environments that you can connect to by exporting one of the following values:
 
 ```
-export SEED_DRYRUN=y
+export ENVIRONMENT=mainnet-release
+export ENVIRONMENT=devnet-release
 ```
 
-To clear the dryrun setting use `unset`
+The examples in this repo use [anchor](https://github.com/coral-xyz/anchor) and each `.env` file sets an RPC-node with `ANCHOR_PROVIDER_URL`.
 
-```
-unset SEED_DRYRUN
-```
+- The default one for `devnet` is a public example RPC-node subject to rate-limiting.
+- The `mainnet` one is a placeholders and will need to be changed for a `mainnet` rpc node.
+- For each, you should set yourself up with your own RPC-node.
 
-### RPC Node
+## RPC-Nodes
 
-```
-export ANCHOR_PROVIDER_URL=https://api.devnet.solana.com
-```
+Two providers you may wish to consider, who both offer free-tier RPCs are:
 
-⚠️ Note that the solana devnet rpc cluster is subject to rate limiting and is used here as an example - so you will want to point at your own node to perform multiple actions ⚠️
+- [Helius](https://www.helius.xyz/)
+- [Quicknode](https://www.quicknode.com/)
 
-### Funding Wallets
 
-Select a wallet depending on whether or not you are for or against an outcome.
+## Additional Environment Settings
 
-```
-export ANCHOR_WALLET=./wallet/for.json
-```
-```
-export ANCHOR_WALLET=./wallet/against.json
-```
+In addition to your wallet path, solana program ID and RPC node information, the `.env` files also specify default values for your seeding and how you wish the seeder to perform.
+
+- **Include Stake in Returns** (true/false)
+  - Whether or not to include the stake/risk in the return calculations.
+- **True Price**
+  - The the mid-point on a market between _for_ and _against_ orders, all prices are calculated from this point on the price ladder.
+- **Spread**
+  - The first price on either side of the ladder from the true price.
+- **Steps**
+  - How many rungs up or down the ladder until the next price is determined.
+- **To Return**
+  - Amount to be returned from your _for_ order.
+- **To Lose**
+  - Amount to be returned from your _against_ order.
+- **Depth Percentages**
+  - Percentage of stake to place.
+  - For example `[100, 75, 50]` will use `100%, 75%, 50%` of the calculated stake.
+  - The number of percentages here also determines the `depth` of the pricing.
 
 # Generate Seeding CSV
 
@@ -77,105 +86,97 @@ This will currently get all:
 
 - Open markets
 - Using the supplied token name for order placement
-- Where the lock time is after Oct 21st (to eliminate a number of non-settled markets)
 
 Some tokens have been mapped so you can pass in a shorthand name for them. Currently mapped tokens:
 
-- Devnet: `betcoin, wins`
-- Mainnet: `usdc, usdt`
+- Devnet: `wins`
+- Mainnet: `usdt`
 
 For any other token, pass in the full publicKey.
 
-This script will generate a CSV breaking down the outcomes for each market, with default midpoints and stakes applied. You can then edit this file prior to running `seedOutcomesFromCsv`.
+This script will generate a CSV breaking down the outcomes for each market, with default seeding values applied. You can then edit this file prior to running `seedOutcomesFromCsv`.
 
 # Seeding From CSV
 
-To seed from a CSV file containing markets, mid-points and stakes, first you need a file located in [src/csvs](src/csvs/) following the format of the [example.csv](src/csvs/example.csv). Each line of the CSV should represent an outcome on a market. The CSV can contain multiple markets and outcomes.
+Following the generation of the CSv, you should edit the values to fulfil your seeding needs. The csv can be found in `/src/csvs/your_csv_name.csv`
 
-⚠️ Maket outcomes will only be seeded if the `seed` value in the csv reads `TRUE` ⚠️
+⚠️ Market outcomes will only be seeded if the `seed` value in the csv reads `TRUE` ⚠️
 
-```
-marketPk,eventPk,marketTitle,marketType,outcome,forMidpoint,forStakes,againstMidpoint,againstStakes,seed
-FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,2WCKyUSKW4o7FNMpvYQ31rDs5rVMJitu3qYqxGuq9onK,Full Time Result,EventResultFullTime,Benfica,2.08,"500, 250, 125",2.03,"500, 250, 125",TRUE
-FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,2WCKyUSKW4o7FNMpvYQ31rDs5rVMJitu3qYqxGuq9onK,Full Time Result,EventResultFullTime,Draw,3.85,"100, 50, 25",3.45,"50, 20, 10",TRUE
-FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu,2WCKyUSKW4o7FNMpvYQ31rDs5rVMJitu3qYqxGuq9onK,Full Time Result,EventResultFullTime,Juventus,4.5,"50, 50, 50",3.85,"50, 50, 50",TRUE
-```
-
-You can then seed the markets and outcomes in the CSV by running:
+In the example below, only the `Mumbai Indians` outcome would be seeded on the `Top Batter Team` market.
 
 ```
-npm run seedOutcomesFromCsv <csv name> <for | against>
+marketPk,eventPk,marketTitle,marketType,outcome,outcomeIndex,truePrice,spread,steps,toReturn,toLose,depthPercentages,seed
+4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD,141cYL6JuKMy3FCx9cAdXRohkFhdj6RCosM3aWAp7cB7,Top Batter Team,EventResultFullTime,Gujarat Titans,0,2,2,2,100,100,"100,75,50",FALSE
+4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD,141cYL6JuKMy3FCx9cAdXRohkFhdj6RCosM3aWAp7cB7,Top Batter Team,EventResultFullTime,Mumbai Indians,1,2,3,1,200,100,"100,75,50",TRUE
 ```
 
-## Example
-
-For the example CSV, orders on the market `FiSjaKqEWpjrMNaQuYpToSscUbYhHpioqegV8tH5LWnu` would be placed for these FOR outcomes:
-
-- Benfica @ a midpoint of 2.08 with stakes of $500, $250, $125
-- Draw @ a midpoint of 3.85 with stakes of $100, $50, $25
-- Juventus @ a midpoint of 4.5 with stakes of $50, $50, $50
+To preview how your markets would seed, run the seeding script with a `false` flag.
 
 ```
-npm run seedOutcomesFromCsv example for
+npm run seedOutcomesFromCsv <csv name> false
 ```
 
-# Seeding From Mid-Point
+Below you can see what stake, prices, and returns, would be used with the following settings:
 
-To seed from a specified mid-point on the price ladder run the following command:
+- True Price `2`
+- Spread `3`
+- Steps `1`
+- To Return `200`
+- To Lose `100`
+- Depth percentages of `100,75,50`
 
-```
-npm run seedMarketOutcome <market publicKey> <for | against> <outcome title> <outcome mid-point> "<comma separated list of stakes>"
-```
+As there are 3 depth percentages, 3 orders are placed on each side: `FOR` and `AGAINST`.
 
-This script will:
-
-- Validate whether or not the outcome provided exists on the market
-- Validate the supplied price point
-- Generate price points using the mid-point as a starting position
-- Depending on whether or not you are seeding FOR or AGAINST, the supplied price points will either go up the ladder (FOR) or down (AGAINST)
-- Place orders where the stakes supplied map to the generated prices (the first stake will always be the mid-point stake)
-
-## Example
-
-- Price Ladder snippet `9.2, 9.4, 9.6, 9.8, 10, 10.5, 11, 11.5, 12`
-
-Place an order AGAINST Liverpool with a mid-point of `10` with 4 stake values
-
-- 10 $1000
-- 9.8 $500
-- 9.6 $200
-- 9.4 $50
+Please note that for `AGAINST` (lay) bets, risk is calculated from the stake and price on The Monaco Protocol.
 
 ```
-npm run seedMarketOutcome 48sthHs2WndgtoJ6zqXqUkmBECFvQw8BydYiwrpjQxMZ against "Liverpool" 10 "1000, 500, 200, 50"
+Market 4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD | Outcome: Mumbai Indians | Title: Top Batter Team ℹ️
+FOR
+[
+  { stake: 98.52, price: 2.03, return: 200 },
+  { stake: 73.17, price: 2.05, return: 150 },
+  { stake: 48.31, price: 2.07, return: 100 }
+]
+AGAINST
+[
+  { stake: 50.76, price: 1.97, return: 100 },
+  { stake: 38.46, price: 1.95, return: 75 },
+  { stake: 25.91, price: 1.93, return: 50 }
+]
 ```
 
-# Manual Seeder
-
-To manually seed a market, you can run the following command:
+If, for example you then decided to change settings, perhaps to only seed to a depth of 2 `100, 75` and to change your `ToLose` to `150` then update your csv and try another dry-run.
 
 ```
-npm run seedMarketOutcomeManual <market publicKey> <for | against> <outcome title> "<comma separated list of prices>" "<comma separated list of stakes>"
+marketPk,eventPk,marketTitle,marketType,outcome,outcomeIndex,truePrice,spread,steps,toReturn,toLose,depthPercentages,seed
+4k3qx4FwWmoTbHHKoHZGLscQEQe2A6s5sfoFFFEqsxGD,141cYL6JuKMy3FCx9cAdXRohkFhdj6RCosM3aWAp7cB7,Top Batter Team,EventResultFullTime,Mumbai Indians,1,2,3,1,200,150,"100,75",TRUE
 ```
 
-The script will:
-
-- Validate supplied arguments in the same manner as the mid-point script
-- Place an order with a 1:1 mapping between the supplied prices and stakes
-
-## Examples
-
-Place an order AGAINST Liverpool at the following prices and stakes:
-
-- 3.25 $1000
-- 3.3 $500
-- 3.35 $250
-- 4.1 $50
-
 ```
-npm run seedMarketOutcomeManual 48sthHs2WndgtoJ6zqXqUkmBECFvQw8BydYiwrpjQxMZ against "Liverpool" "3.25, 3.3, 3.35, 4.1" "1000, 500, 250 50"
+FOR
+[
+  { stake: 98.52, price: 2.03, return: 200 },
+  { stake: 73.17, price: 2.05, return: 150 }
+]
+AGAINST
+[
+  { stake: 76.14, price: 1.97, return: 150 },
+  { stake: 57.69, price: 1.95, return: 112.5 }
+]
 ```
 
-# Price Ladder Note
+Once happy with the output of the dryrun, and the orders it will place, you can then seed the markets by switching to a `true` flag.
 
-Please note that the price ladder currently used by this tool is currently hardcoded in [market_helpers.ts](src/market_helpers.ts) - this is a copy of the `DEFAULT_PRICE_LADDER` shipped with [The Monaco Protocol Admin Client](https://github.com/MonacoProtocol/admin-client/blob/main/types/default_price_ladder.ts). In the future there will be an option to pull the price ladder from the market outcome account in order to support custom price ladder markets.
+```
+npm run seedOutcomesFromCsv <csv name> true
+```
+
+This will place the orders, on the market outcomes. If will do so in an asynchronous manner to aid performance.
+
+# Cancel Orders
+
+A script has been provided to cancel all orders for your wallet on the specified market at invocation. If a `false` flag is passed then a list of orders will be returned. If a `true` flag is passed then an attempt will be made to cancel all the cancellable orders on that market for your wallet.
+
+```
+npm run cancelOrders <marketPk> <true/false>
+```

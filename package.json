@@ -1,23 +1,40 @@
 {
     "name": "@monaco-protocol/market-seeder",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Monaco Protocol Market Seeder",
     "author": "Monaco Protocol",
-    "license" : "MIT",
+    "license": "MIT",
     "module": "commonjs",
     "target": "es5",
     "scripts": {
         "generateSeedCsv": "ts-node src/generate_seed_csv.ts",
-        "seedMarketOutcomeManual": "ts-node src/seed_market_outcome_manual.ts",
-        "seedOutcomesFromCsv": "ts-node src/seed_from_csv.ts",
-        "seedMarketOutcome": "ts-node src/seed_market_outcome_from_point.ts"
+        "seedFromCsv": "ts-node src/seed_from_csv.ts",
+        "cancelOrders": "ts-node src/cancel_orders.ts",
+        "format": "prettier --config .prettierrc 'src/**/*.(ts|js)' --write",
+        "prepare": "husky install"
     },
     "dependencies": {
-        "@monaco-protocol/client": "1.1.4",
-        "@project-serum/anchor": "^0.25.0",
+        "@coral-xyz/anchor": "~0.27.0",
+        "@monaco-protocol/client": "^5.0.0",
+        "@monaco-protocol/seed-calculator": "^0.1.0",
         "@solana/spl-token": "^0.3.5",
         "@solana/web3.js": "^1.53.0",
-        "ts-node": "^10.7.0",
-        "fast-csv": "^4.3.6"
+        "dotenv": "^16.0.3",
+        "fast-csv": "^4.3.6",
+        "ts-node": "^10.7.0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.33.1",
+        "@typescript-eslint/parser": "^5.33.1",
+        "eslint": "^8.22.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.7.1"
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx}": "eslint --cache --fix",
+        "*.{js,ts,tsx,css,md}": "prettier --write"
     }
 }
