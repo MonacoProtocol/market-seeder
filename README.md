@@ -1,3 +1,7 @@
+# ARCHIVED 📦 #
+
+This repo is related to `v1` of the Monaco Protocol.
+
 # Market Seeder
 
 Tool for seeding markets on The Monaco Protocol. The tool makes use of the Monaco Protocol [seed-calculator](https://github.com/MonacoProtocol/seed-calculator) package.
